@@ -6,17 +6,27 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            for (int i = 1; i < 10; i++)
+            
+            string kurs1 = " Yazilim gelistirici yetistirme kampi";
+            string kurs2 = " Porgramlama balsnagic icin temel kurs";
+            string kurs3 = "java";
+
+            string[] kurslar = new string[] { kurs1, kurs2, kurs3 };
+
+            
+
+            for (int x  = 0; x < kurslar.Length; x++)
             {
-                Console.WriteLine(i);
-
-                string kurs1 = " Yazilim gelistirici yetistirme kampi";
-                string kurs2 = " Porgramlama balsnagic icin temel kurs";
-                string kurs3 = "java";
-
-
+                Console.WriteLine(kurslar[x]);
             }
 
+            foreach (var kurs in kurslar)
+            {
+
+                Console.WriteLine(kurs);
+            }
+
+           
         }
 
     }
